@@ -1,0 +1,121 @@
+/* { #header  */
+
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    line-height: 60px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .inner h1 img {
+    width: 160px;
+    font-size: 0;
+    vertical-align: middle;
+    transform: translate(0, -1px);
+}
+
+#header .gnb {
+    display: flex;
+    gap: 60px;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 60px;
+    font-weight: 500;
+}
+
+#header .gnb>ul>li:hover {
+    color: #E50012;
+}
+
+#header .gnb .red {
+    background: #E50012;
+    color: #fff;
+    padding: 0 20px;
+}
+
+#header .gnb>ul a {
+    display: block;
+}
+
+
+/* #header } */
+
+
+
+/* { .mainVisual */
+
+.mainVisual {
+    position: relative;
+    margin: 0 auto;
+}
+
+.mainVisual .mainSlide {
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.mainVisual figure {
+    height: 800px;
+}
+
+
+.mainSlide .main01 {
+    background: url(../img/SH_POSTER2.jpg) no-repeat center center / cover;
+}
+
+.mainSlide .main02 {
+    background: url(../img/SH_POSTER3.jpg) no-repeat center center / cover;
+}
+
+.mainSlide .main03 {
+    background: url(../img/SH_POSTER1.jpg) no-repeat center center / cover;
+}
+
+.mainVisual .mainSlide {
+    position: relative;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background: none;
+    font-size: 0;
+    z-index: 999;
+}
+
+.mainVisual .mainSlide .mtxt {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainVisual .mainSlide .main01 p {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    margin: 0 auto 10px auto;
+
+    font-size: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.mainVisual .mainSlide .main01 h2 {}
