@@ -1,5 +1,25 @@
 /* { #header  */
 
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SANJUGotgam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 #header {
     position: fixed;
@@ -101,21 +121,120 @@
     z-index: 999;
 }
 
-.mainVisual .mainSlide .mtxt {
+.mainVisual .mainSlide figure {
     position: relative;
+}
+
+.mainVisual .mainSlide .mtxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 1200px;
-    margin: 0 auto;
+
+}
+
+.mainVisual .mainSlide .mtxt_gr {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1200px;
 }
 
 .mainVisual .mainSlide .main01 p {
-    position: absolute;
-    top: 150px;
-    left: 0;
-    margin: 0 auto 10px auto;
-
-    font-size: 25px;
-    font-weight: 300;
     color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    margin: 60px 0 20px 0;
 }
 
-.mainVisual .mainSlide .main01 h2 {}
+.mainVisual .mainSlide .main01 p span {
+    color: rgb(255, 216, 144);
+    font-size: 26px;
+    font-weight: 200;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.mainVisual .main01 h2::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100px;
+    background: #fff;
+    margin: 30px 0 0 133px;
+
+}
+
+.mainVisual .mainSlide .main01 h2 span {
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    font-family: 'SF_HambakSnow';
+}
+
+.mainVisual .mainSlide .main01 h2 {
+    color: rgb(255, 190, 68);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 120px;
+    font-family: 'SF_HambakSnow';
+}
+
+.mainVisual .mainSlide .main02 .prot {
+    font-family: 'yg-jalnan';
+    margin: 0 0 10px 0;
+}
+
+.mainVisual .main02 .prot h2 {
+    color: #2f7fdb;
+    font-size: 120px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.mainVisual .main02 .prot h2::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #0155b4;
+    margin: 20px 0 -10px 122px;
+
+}
+
+.mainVisual .main02 .prot strong {
+    color: #0155b4;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.mainVisual .main02 p {
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    background: #fdb00b;
+    padding: 5px 5px 6px 5px;
+}
+
+.mainVisual .main03 h2 {
+    font-family: 'SANJUGotgam';
+    color: #0e9e56;
+    font-size: 110px;
+
+    margin: 0 0 20px 0;
+
+}
+
+.mainVisual .main03 p {
+    font-family: 'SANJUGotgam';
+    color: #008b35;
+    font-size: 85px;
+}
