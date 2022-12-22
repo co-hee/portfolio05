@@ -1,4 +1,4 @@
-/* { #header  */
+/*  #header { */
 
 @font-face {
     font-family: 'yg-jalnan';
@@ -76,7 +76,7 @@
 
 
 
-/* { .mainVisual */
+/*  .mainVisual { */
 
 .mainVisual {
     position: relative;
@@ -237,4 +237,36 @@
     font-family: 'SANJUGotgam';
     color: #008b35;
     font-size: 85px;
+}
+
+/* mainVisual } */
+
+
+
+
+
+/* mainContent { */
+.mainContent {
+    padding: 100px 0;
+}
+
+.mainContent .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContent .txt h2 {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #DE1E10;
+}
+
+.mainContent .txt p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 60px 0;
+    text-align: center;
+    line-height: 28px;
 }
