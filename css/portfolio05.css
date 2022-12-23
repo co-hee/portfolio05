@@ -1,5 +1,6 @@
 /*  #header { */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
 
 @font-face {
     font-family: 'yg-jalnan';
@@ -23,10 +24,8 @@
 }
 
 #header {
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 999;
     line-height: 70px;
     background: #fff;
@@ -90,7 +89,7 @@
 
 .mainVisual .mainSlide {
     position: absolute;
-    top: 70px;
+    top: 0;
     left: 0;
 }
 
@@ -256,21 +255,21 @@
     padding: 100px 0;
 }
 
-.mainContent .inner {
+/* .mainContent .inner {
     width: 1200px;
     margin: 0 auto;
-}
+} */
 
 .mainContent .txt h2 {
     font-size: 50px;
     font-weight: 900;
     margin: 0 0 40px 0;
     text-align: center;
-    color: #333;
+    color: #000;
 }
 
 .mainContent .txt p {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 400;
     margin: 0 0 100px 0;
     text-align: center;
@@ -280,37 +279,63 @@
 .mainContent .cont>div {
     font-size: 60px;
     font-weight: 700;
-    margin: 0 0 60px 0;
+    /* margin: 0 0 60px 0; */
     color: #333;
+}
+
+.menu_wrap::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 390px;
+    background: #E50012;
+    margin: 8px 0 0 0;
+
 }
 
 .menu_gnb li {
     color: rgb(142, 142, 142);
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 20px 40px;
 }
 
 .menu_gnb li.on {
-    color: #333;
+    color: #000;
 }
 
 .mainContent .cont {}
 
-.mainContent .cont .tab {
-    position: absolute;
-    top: 420px;
-    right: 300px;
-    width: 900px;
+.mainContent .menu_wrap {
+    display: flex;
+    justify-content: space-between;
+    width: calc(1200px + (100% - 1200px)/2);
+    margin: 0 0 0 auto;
 }
 
+.mainContent .cont .tab {
+    width: 1000px;
+    overflow: hidden;
+}
+
+
+
 .mainContent .cont .tab>div {
+    width: 1220px;
     visibility: hidden;
     height: 0;
+    overflow: hidden;
+    margin: 4px 0 0 0;
+    transition: 0.5s;
 }
+
+/* .menu_sd {
+    width: 1000px;
+} */
 
 .mainContent .cont .tab>div.on {
     visibility: visible;
+    height: auto;
 }
 
 
@@ -362,29 +387,44 @@
 
 .lotto .inner .txt strong {
     display: block;
-    font-size: 30px;
-    margin: 0 0 20px 0;
+    font-size: 22px;
+    margin: 0 0 25px 0;
 }
 
 .lotto .inner .txt p {
     font-size: 26px;
     margin: 0 0 40px 0;
-    line-height: 36px;
+    line-height: 40px;
 }
 
 .lotto .inner .txt span {
-    font-size: 32px;
-    font-weight: 700;
-    border-bottom: 0;
-    transition: 0.5s;
-    border-radius: 1px;
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
     color: #333;
+
 }
 
-.lotto .inner .txt span:hover {
-    font-size: 32px;
-    border-bottom: 2px solid #E50012;
-    border-radius: 1px;
+.lotto .inner .txt span::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #E50012;
+    transform: translate(-15px, 8px);
+}
+
+.lotto .inner .txt span i {
+    margin: 0 0 0 20px;
+    font-size: 40px;
+    transition: 0.5s;
+    transform: translate(0, 4px);
+}
+
+.lotto .inner .txt span:hover i {
+    transform: translate(20px, 4px);
+    color: #E50012;
 }
 
 
